@@ -15,8 +15,6 @@ const aizs = require('./veikals/aizsardziba.js')
 const mute = require('./mute.js')
 const sisolas = require(`./sarunas/sisolas.js`)
 const memberCount = require(`./member-count.js`)
-const redisPath = (process.env.REDIS)
-const mongoPath = (process.env.MONGO)
 
 
 const poll = require(`./poll.js`)

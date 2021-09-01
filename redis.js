@@ -1,5 +1,5 @@
 const redis = require('redis')
-const redisPath = require('./index.js')
+const redisPath = process.env.REDIS
 module.exports = async () => {
   return await new Promise((resolve, reject) => {
     const client = redis.createClient({
