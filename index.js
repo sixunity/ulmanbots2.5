@@ -88,7 +88,7 @@ client.on('guildMemberAdd', member => {
 
 
 
-client.login(config.token)
-const redisPath = config.redis
-const mongoPath = config.mongo
+client.login(process.env.token)
+const redisPath = process.env.redis
+const mongoPath = process.env.mongo
 
