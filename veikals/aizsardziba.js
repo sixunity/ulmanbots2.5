@@ -1,3 +1,4 @@
+//šitas arī nederīgs
 const redis = require('../redis')
 const command = require('../command')
 
