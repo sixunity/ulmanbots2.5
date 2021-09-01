@@ -15,8 +15,6 @@ const aizs = require('./veikals/aizsardziba.js')
 const mute = require('./mute.js')
 const sisolas = require(`./sarunas/sisolas.js`)
 const memberCount = require(`./member-count.js`)
-const redisPath = config.redis
-const mongoPath = config.mongo
 
 const poll = require(`./poll.js`)
 const mainone = "797584379685240885"
@@ -91,3 +89,6 @@ client.on('guildMemberAdd', member => {
 
 
 client.login(config.token)
+const redisPath = config.redis
+const mongoPath = config.mongo
+
