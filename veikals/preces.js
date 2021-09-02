@@ -1,5 +1,6 @@
 const redis = require('../redis.js')
 const client = require('../index.js')
+//šī funkcijfa laikam pievieno kādu lietu klāt kontam
 const redisKeyPrefix = 'default-'
 module.exports = async(target, guild, prefikss, seconds) => {
 const redisKeyPrefix = prefikss

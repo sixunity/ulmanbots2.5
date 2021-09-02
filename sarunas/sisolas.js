@@ -7,7 +7,7 @@ module.exports = (client, Discord, message) => {
 	
     
     if (abzp(message,divaina_,_zivs)){
-      message.channel.send(divainaszivsarray[Math.floor((Math.random() * divainaszivsarray.length) + 0)]);
+      message.channel.send(randoms(divainaszivsarray));
     //  const divzivs = client.emojis.cache.find(emoji => emoji.name === "DivainaZivs");
 	}
   return;

@@ -5,7 +5,7 @@ const arajs1 = [`<@424817815397203969>`,`<@289805100141248512>`,`<@5279242939343
 module.exports = (client, msge) => {
 
     if (abzp(msge,arajs2)){
-      msge.channel.send(arajs1[Math.floor((Math.random() * arajs1.length) + 0)])
+      msge.channel.send(randoms(arajs1))
     //  const divzivs = client.emojis.cache.find(emoji => emoji.name === "DivainaZivs");
 	}
 };

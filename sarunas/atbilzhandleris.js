@@ -1,5 +1,9 @@
 const {ulmanversija} = require('../config.json')
 const Discord = require('discord.js')
+//šeit atrodas bieži izmantotas funkcijas kā atbilde un randoms :Trola_seja:
+
+//ja godīgi es vairs neatceros ko "abzp" nozīmē, bet ļoti noderīga funkcija, pārbauda vai ziņa satur abus vārdus
+//nepieciešamus priekš atbildes, un manuprāt arī varētu kodu palielināt lai pat 3 vārdus pārbauda bez problēmām
 module.exports.abzp = (message,a1,a2) => {
   var a1true = false
   var a2true = false

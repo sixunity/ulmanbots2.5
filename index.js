@@ -25,7 +25,7 @@ const config = require('./config.json')
 client.on('ready', async () => {
 
   console.log('The client is ready!')
-
+//šitas te sūds atrod visas pieejamās komandas "commands mapē"
   const baseFile = 'command-base.js'
   const commandBase = require(`./commands/${baseFile}`)
 

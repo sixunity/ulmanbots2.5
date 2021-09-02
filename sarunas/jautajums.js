@@ -5,7 +5,7 @@ const arajs1 = [`Jā.`,`Nē`,`Iespējams`,`Nezinu`,`Noteikti, ka jā`,`Noteikti,
 module.exports = (client,msge) => {
   
     if (abzp(msge,ulmanarajs,arajs2)){
-      msge.channel.send(arajs1[Math.floor((Math.random() * arajs1.length) + 0)]);
+      msge.channel.send(randoms(arajs1));
       return
 	}
 };

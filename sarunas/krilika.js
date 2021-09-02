@@ -6,7 +6,7 @@ module.exports = (client, message) => {
 
 
     if (abzp(message,arajs2)){
-      message.channel.send(arajs1[Math.floor((Math.random() * arajs1.length) + 0)]);
+      message.channel.send(randoms(arajs1));
       message.channel.send(`.kakts <@${message.member.id}> 1 m`).then(msg=>msg.delete({timeout:"3"}))
       //const divzivs = client.emojis.cache.find(emoji => emoji.name === "");
 
