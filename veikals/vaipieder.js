@@ -6,7 +6,7 @@ module.exports = async(lieta, member, guild,) => {
       if (err) {
         console.error('Redis GET kluda:', err)
       } else if (result) {
-        return true
+        return result
       } else {
       }
     })

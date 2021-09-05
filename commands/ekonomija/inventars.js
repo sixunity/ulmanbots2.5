@@ -12,20 +12,30 @@ module.exports = {
   commands: ['inventārs','e',`inventars`],
   callback: async (message, arguments) => {
     
-/*
+
 const { member, channel, content, mentions, guild } = message
 //šite kautkāds lielais smieklīgais notiek
+const redisClient = await redis()
+
 for(const test of tests)
-    { 
-      if (vaipieder(test, member, guild)){
-        inventaars += test
-        message.reply(`${test} : ${vaipieder(test, member, guild)}`)
+    {
+    redisClient.get(`${test}${member.id}-${guild.id}`, (err, result) => {
+      if (err) {
+        console.error('Redis GET kluda:', err)
+      } else if (result) {
+        message.reply(`${test}: ${result}`)
+      } else {
       }
+    })
+    redisClient.quit()
+  }
+  
+      
      
 
+  atbilde('Inventārs',korupcijalogo,`${inventaars}`, message,'#00000')
 
 }
-atbilde('Inventārs',korupcijalogo,`${inventaars}`, message,'#00000')*/
 
 }
-}
+
