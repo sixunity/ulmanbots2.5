@@ -3,6 +3,7 @@ const Discord = require('discord.js')
 const {ulmanversija} = require('../../config.json')
 const preces = new Map()
 const pievienotpreci = require('../../veikals/preces.js')
+const vaipieder = require(`../../veikals/vaipieder.js`)
 module.exports = {
   commands: ['pirkt', 'veikals'],
   minArgs: 0,
@@ -43,6 +44,11 @@ if(arguments[0])
 await economy.addCoins(guild.id, member.id, -preces.get(arguments[0]))
 await economy.addCoins(guild.id, '862358305947385856', preces.get(arguments[0]))
 message.channel.send(arguments[0])
+if (vaipieder(arguments[0],member,guild)){
+  message.reply('jau pieder')
+  return
+}
+
 switch(parseInt(arguments[0]))
 {
   case 1: pievienotpreci(member, guild, "juridiskapersona-", 10000);break;
