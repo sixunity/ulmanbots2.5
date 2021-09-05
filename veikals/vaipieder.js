@@ -6,9 +6,8 @@ module.exports = async(lieta, member, guild,) => {
       if (err) {
         console.error('Redis GET kluda:', err)
       } else if (result) {
-        return result
+        return true
       } else {
-        console.log('civēks netika atbrīvots')
       }
     })
     redisClient.quit()

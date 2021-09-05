@@ -12,7 +12,7 @@ module.exports = {
   commands: ['inventārs','e',`inventars`],
   callback: async (message, arguments) => {
     
-
+/*
 const { member, channel, content, mentions, guild } = message
 //šite kautkāds lielais smieklīgais notiek
 for(const test of tests)
@@ -25,7 +25,7 @@ for(const test of tests)
 
 
 }
-atbilde('Inventārs',korupcijalogo,`${inventaars}`, message,'#00000')
+atbilde('Inventārs',korupcijalogo,`${inventaars}`, message,'#00000')*/
 
 }
 }
