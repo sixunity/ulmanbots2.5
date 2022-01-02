@@ -49,7 +49,7 @@ client.on('ready', async () => {
   jurid(client)
   aizs(client)
   poll(client)
-memberCount(client)
+//memberCount(client)
   antispams(client)
   client.user.setActivity("Iznīcini Okupantus IV", {
   type: "PLAYING",
