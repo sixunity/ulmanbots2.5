@@ -18,7 +18,7 @@ module.exports = {
     const coins = arguments[1]
     if(coins>20){
       message.reply('Nevajag jau mums te inflāciju nekādu, dod mazāk.')
-     // return
+     return
     }
     if(coins<=0){
       message.reply(`Nepareizs naudas daudzums dauni`)
