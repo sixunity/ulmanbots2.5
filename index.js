@@ -16,7 +16,7 @@ const jurid = require('./veikals/juridiskapersona.js')
 const aizs = require('./veikals/aizsardziba.js')
 const mute = require('./mute.js')
 const sisolas = require(`./sarunas/sisolas.js`)
-const memberCount = require(`./member-count.js`)
+//const memberCount = require(`./member-count.js`)
 
 
 const poll = require(`./poll.js`)
