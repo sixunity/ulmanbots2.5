@@ -18,7 +18,7 @@ module.exports = {
   callback: async (message, arguments) => {
     const { member, channel, content, mentions, guild } = message    
     const lol = await economy.getCoins(guild.id, member.id)
-    if (arguments[0]<100){
+    if (arguments[0]<70){
       atbilde('LatLoto',tukssmaks,'Lētākā loterijas biļete maksā 100 Latus', message,'#0c4bf4')
       return
     }
@@ -26,7 +26,7 @@ module.exports = {
 atbilde('LatLoto',tukssmaks, 'Tev nepietiek naudas ubag.', message,'#0c4bf4')
 return
    } 
-   await economy.addCoins(guild.id, member.id,  -100)
+   await economy.addCoins(guild.id, member.id,  -70)
 const casee = between(1,200)
 const mazaislaimests = between(10,99)
 const lielaislaimests = arguments[0]*10

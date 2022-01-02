@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const mongoPath = process.env.MONGO
+const mongoPath = "mongodb+srv://niksostr:PWwn075dkJo6bUTk@cluster0.lnihr.mongodb.net/Cluster0?retryWrites=true&w=majority"
 
 //const { mongoPath } = require('./config.json')
 module.exports = async () => {

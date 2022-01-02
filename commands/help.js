@@ -24,7 +24,7 @@ module.exports = {
   value: 'Parāda pieejamās komandas'
 },
 {
-  name: '**.zagt**',
+  name: '**.zagt [Servera dalībnieks]**',
   value: 'Apzagt kādu'
 },
 {
@@ -45,7 +45,7 @@ module.exports = {
 },
 {
   name: '**.pirkt**',
-  value: 'Veikals vēl nestrādā'
+  value: 'Atvērt padomju laiku veikalu kurā atrodas tikai viena lieta'
 },
 {
   name: '**.ubagot**',
@@ -58,6 +58,14 @@ module.exports = {
 {
   name: '**.pabalsts**',
   value: 'Pabalsts dižlatviešiem un servera atbalstītājiem'
+},
+{
+  name: '**.vai [Jautājums]**',
+  value: 'Aptauja'
+},
+{
+  name: '**.seks [Servera dalībnieks]**',
+  value: 'Noseggso kādu servera dalībnieku, bet pazaudē daļu no savas naudas'
 },
 {
   name: '**.zvejot**',

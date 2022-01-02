@@ -33,7 +33,7 @@ for(const test of tests)
       
      
 
-  atbilde('Inventārs',korupcijalogo,`${inventaars}`, message,'#00000')
+  atbilde('Inventārs bļāviens ejat dirst inventārs nestrādā pašlaik',korupcijalogo,`${inventaars}`, message,'#00000')
 
 }
 

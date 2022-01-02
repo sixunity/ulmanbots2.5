@@ -2,7 +2,8 @@ const EventEmitter = require('events');
 const path = require('path')
 const fs = require('fs')
 const Discord = require('discord.js')
-const client = new Discord.Client({ intents: [Discord.Intents.GUILD_MEMBERS] })
+
+const client = new Discord.Client({intents: [ Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES, Discord.Intents.FLAGS.DIRECT_MESSAGES, ] })
 const ambalis = require('./sarunas/ambaliis.js')
 const antispams = require('./antispamscerams.js')
 const divainazivs = require('./sarunas/divainazivs.js')
@@ -10,6 +11,7 @@ const jautajums = require('./sarunas/jautajums.js')
 const lenka = require('./sarunas/lenka.js')
 const krilika = require('./sarunas/krilika.js')
 const martinsons = require('./sarunas/martinsons.js')
+const reiz = require('./sarunas/reiz.js')
 const jurid = require('./veikals/juridiskapersona.js')
 const aizs = require('./veikals/aizsardziba.js')
 const mute = require('./mute.js')
@@ -49,7 +51,7 @@ client.on('ready', async () => {
   poll(client)
 memberCount(client)
   antispams(client)
-  client.user.setActivity("Pamēģini .palīdzība", {
+  client.user.setActivity("Iznīcini Okupantus IV", {
   type: "PLAYING",
 });
 
@@ -58,11 +60,13 @@ memberCount(client)
 client.on('message', message => {
   if (message.author.bot) return
   jautajums(client,message)
+  reiz(client, message)
   divainazivs(client, Discord, message)
   sisolas(client, Discord, message)
 
 krilika(client, message)
 martinsons(client, message)
+
 ambalis(client, message)
 lenka(client, message)
 
@@ -89,5 +93,5 @@ client.on('guildMemberAdd', member => {
 
 
 
-client.login(process.env.TOKEN)
+client.login("ODYyNDYyMDMzMzk2MjM2Mjk4.YOYsXA._yxio1EtlmAjYvARY5CxVWp6l8k")
 

@@ -47,7 +47,7 @@ module.exports = {
 
 
     message.reply(
-      `Tu iedevi <@${userId}> ${coins} Latus. Kopsumma ${newCoins} Lati!`
+      `Tu iedevi <@${userId}> ${coins} Latus. Kopsumma ${(Math.round(newCoins * 100) / 100).toFixed(2)} Lati!`
     )
   },
 }
