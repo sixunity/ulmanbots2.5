@@ -1,4 +1,4 @@
-const {abzp} = require(`./atbilzhandleris.js`)
+const {abzp, randoms} = require(`./atbilzhandleris.js`)
 const ulmanarajs = ['Ulmani','ulmani','karli','Karli','kārli','Kārli']
 const arajs1 = [`Jā.`,`Nē`,`Iespējams`,`Nezinu`,`Noteikti, ka jā`,`Noteikti, ka nē`,`Kā tad savādāk?`,`Kas tas par stulbu jautājumu?`];
               const arajs2 = [`?`];

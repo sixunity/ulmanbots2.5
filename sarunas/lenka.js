@@ -1,4 +1,4 @@
-const {abzp} = require(`./atbilzhandleris.js`)
+const {abzp, randoms} = require(`./atbilzhandleris.js`)
 const arajs1 = [`<@424817815397203969>`,`<@289805100141248512>`,`<@527924293934383105>`];
               const arajs2 = [`Lenka`,`lenka`,`ļenka`,`Ļenka`,`Leenka`];
            //   var beigparbaude1 = false;
