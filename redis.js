@@ -1,5 +1,5 @@
 const redis = require('redis')
-const redisPath = "//redis-16810.c282.east-us-mz.azure.cloud.redislabs.com:16810?password=GFBveZpqfv0RmsHK0l5Rc9L35RPNuZYQ"
+const redisPath = process.env.REDIS
 module.exports = async () => {
   return await new Promise((resolve, reject) => {
     const client = redis.createClient({
