@@ -27,7 +27,7 @@ const config = require('./config.json')
 client.on('ready', async () => {
   let defaultChannel = "898550678417457163";
 
-  message.defaultChannel.send("!d bump") //send it to whatever channel the bot has permissions to send on
+  client.channels.cache.get(mainone).send("!d bump") //send it to whatever channel the bot has permissions to send on
 
   console.log('The client is ready!')
 //šitas te sūds atrod visas pieejamās komandas "commands mapē"
@@ -101,7 +101,7 @@ client.guilds.cache.forEach((guild) => { //for each guild the bot is in
         }
   })
   setInterval (function () {
-       message.defaultChannel.send("!d bump") //send it to whatever channel the bot has permissions to send on
+    client.channels.cache.get(mainone).send("!d bump") //send it to whatever channel the bot has permissions to send on
   }, 7200000);})
 
 
