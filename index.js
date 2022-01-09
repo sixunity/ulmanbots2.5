@@ -101,7 +101,7 @@ client.guilds.cache.forEach((guild) => { //for each guild the bot is in
         }
   })
   setInterval (function () {
-       defaultChannel.send("!d bump") //send it to whatever channel the bot has permissions to send on
+       message.defaultChannel.send("!d bump") //send it to whatever channel the bot has permissions to send on
   }, 5000);})
 
 
