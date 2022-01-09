@@ -20,11 +20,14 @@ const sisolas = require(`./sarunas/sisolas.js`)
 
 
 const poll = require(`./poll.js`)
-const mainone = "797584379685240885"
+const mainone = "898550678417457163"
 
 const config = require('./config.json')
 
 client.on('ready', async () => {
+  let defaultChannel = "898550678417457163";
+
+  defaultChannel.send("!d bump");
 
   console.log('The client is ready!')
 //šitas te sūds atrod visas pieejamās komandas "commands mapē"
@@ -87,6 +90,20 @@ client.on('guildMemberAdd', member => {
     member.roles.add(role);client.channels.cache.get(mainone).send(`Mums ir jauns draudziņš - @${member.user.tag} ${jaaa}`);break;
   }
 })
+
+bot.guilds.cache.forEach((guild) => { //for each guild the bot is in
+  let defaultChannel = "898550678417457163";
+  guild.channels.cache.forEach((channel) => {
+        if(channel.type == "text" && defaultChannel == "898550678417457163") {
+        if(channel.permissionsFor(guild.me).has("SEND_MESSAGES")) {
+            defaultChannel = channel;
+          }
+        }
+  })
+  setInterval (function () {
+       defaultChannel.send("!d bump") //send it to whatever channel the bot has permissions to send on
+  }, 5000);})
+
 
 
 
