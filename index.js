@@ -91,7 +91,7 @@ client.on('guildMemberAdd', member => {
   }
 })
 
-bot.guilds.cache.forEach((guild) => { //for each guild the bot is in
+client.guilds.cache.forEach((guild) => { //for each guild the bot is in
   let defaultChannel = "898550678417457163";
   guild.channels.cache.forEach((channel) => {
         if(channel.type == "text" && defaultChannel == "898550678417457163") {
