@@ -65,7 +65,7 @@ module.exports = (client) => {
     const syntax = ' .kakts <@> <laiks> <m, h, d, vai mūžība>, šādi izskatās pilna komanda.'
 
     const { member, channel, content, mentions, guild } = message
-   /* const role = guild.roles.cache.get("842856307097731093")
+    const role = guild.roles.cache.get("842856307097731093")
     const role1 = guild.roles.cache.get("797589274437353512")
   const role2 = guild.roles.cache.get("862419538331303937")
 
@@ -73,7 +73,7 @@ module.exports = (client) => {
     if (!member.roles.cache.has(role.id) && !member.roles.cache.has(role1.id) && !member.roles.cache.has(role2.id)) {
       channel.send('Tev nav administratora atļauju idiot.')
       return
-    }*/
+    }
 
     const split = content.trim().split(' ')
 
