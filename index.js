@@ -20,12 +20,12 @@ const sisolas = require(`./sarunas/sisolas.js`)
 
 
 const poll = require(`./poll.js`)
-const mainone = "898550678417457163"
+const mainone = "979825845994672158"
 
 const config = require('./config.json')
 
 client.on('ready', async () => {
-  let defaultChannel = "898550678417457163";
+  let defaultChannel = "979825845994672158";
 
   client.channels.cache.get(mainone).send("!d bump") //send it to whatever channel the bot has permissions to send on
 
@@ -92,9 +92,9 @@ client.on('guildMemberAdd', member => {
 })
 
 client.guilds.cache.forEach((guild) => { //for each guild the bot is in
-  let defaultChannel = "898550678417457163";
+  let defaultChannel = "979825845994672158";
   guild.channels.cache.forEach((channel) => {
-        if(channel.type == "text" && defaultChannel == "898550678417457163") {
+        if(channel.type == "text" && defaultChannel == "979825845994672158") {
         if(channel.permissionsFor(guild.me).has("SEND_MESSAGES")) {
             defaultChannel = channel;
           }
